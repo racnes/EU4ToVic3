@@ -107,8 +107,8 @@ jobs:
        cd $Env:GITHUB_WORKSPACE\Release-Tests\
        .\EU4ToVic3Tests.exe
 
-    - name: "Upload built exe"
+    - name: "Upload built package"
       uses: actions/upload-artifact@v4
       with:
-        name: EU4ToVic3-exe
-        path: Release/*.exe
+        name: EU4ToVic3-build
+        path: Release/**
