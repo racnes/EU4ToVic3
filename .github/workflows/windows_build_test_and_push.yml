@@ -108,7 +108,7 @@ jobs:
        .\EU4ToVic3Tests.exe
 
     - name: "Upload built exe"
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: EU4ToVic3-exe
         path: Release/*.exe
