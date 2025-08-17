@@ -106,3 +106,9 @@ jobs:
       run: |
        cd $Env:GITHUB_WORKSPACE\Release-Tests\
        .\EU4ToVic3Tests.exe
+
+    - name: "Upload built exe"
+      uses: actions/upload-artifact@v3
+      with:
+        name: EU4ToVic3-exe
+        path: Release/*.exe
